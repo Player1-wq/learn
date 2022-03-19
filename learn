@@ -1,6 +1,7 @@
-int timeOneHuman = 10;
+int timeHuman = 10;
 Console.WriteLine("Как много людей в очереди перед Вами?");
 int people = int.Parse(Console.ReadLine());
-int timeWaitHours = people * timeOneHuman / 60;
-int timeWaitMinutes = people * timeOneHuman % 60;
-Console.WriteLine("Вам надо будет  подождать {0} часов {1} минут", timeWaitHours, timeWaitMinutes);
+int minutesInHour = 60;
+int waitHours = people * timeHuman / minutesInHour;
+int waitMinutes = people * timeHuman % minutesInHour;
+Console.WriteLine("Вам надо будет  подождать {0} часов {1} минут", waitHours, waitMinutes);
