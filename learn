@@ -1,10 +1,10 @@
-Console.WriteLine("Как Вас зовут?");
-var name = Console.ReadLine();
-Console.WriteLine("Сколько Вам лет?");
-var age = Console.ReadLine();
-Console.WriteLine("Где Вы живете?");
-var adress = Console.ReadLine();
-Console.WriteLine("Чему Вы хотите научиться?");
-var goal = Console.ReadLine();
-Console.WriteLine("Вас зовут {0}, Вам исполнилось {1}, Вы живете {2}, и Вы хотите научиться {3}", name, age, adress, goal);
+Console.WriteLine("Сколько золота у Вас есть?");
+int gold = int.Parse(Console.ReadLine());
 
+int priceCristal = 10;
+Console.WriteLine("Один кристал стоит {0} золота. Сколько кристалов Вы хотите купить?", priceCristal);
+int crystals = int.Parse(Console.ReadLine());
+
+int remainderGold = gold - crystals*priceCristal;
+
+Console.WriteLine("Вы получите {0} кристалов, у Вас останется {1} золота.", crystals, remainderGold);
