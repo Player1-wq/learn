@@ -1,10 +1,7 @@
-Console.WriteLine("Как Вас зовут?");
-var name = Console.ReadLine();
-Console.WriteLine("Сколько Вам лет?");
-var age = Console.ReadLine();
-Console.WriteLine("Где Вы живете?");
-var adress = Console.ReadLine();
-Console.WriteLine("Чему Вы хотите научиться?");
-var goal = Console.ReadLine();
-Console.WriteLine("Вас зовут {0}, Вам исполнилось {1}, Вы живете {2}, и Вы хотите научиться {3}", name, age, adress, goal);
+int countPaintings = 52;
+int painingsInRow = 3;
 
+int rows = countPaintings / painingsInRow;
+int excessPaintings = countPaintings % painingsInRow;
+
+Console.WriteLine("Заполнится {0} рядов, лишними остануться {1} картин.", rows, excessPaintings);
