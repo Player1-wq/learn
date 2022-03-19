@@ -1,10 +1,10 @@
-string namePlanet = "Earth";
-int numberPlanet = 3;
-bool canLife = true;
-float speedMove = 107000;
-byte countSatellites = 1;
-char shortName = 'E';
-object nearbyStar = "Sun";
-ushort countPlanets = 8;
-short diameterPlanet = 12742;
-double distanceEarthToSun = 8;
+Console.WriteLine("Как Вас зовут?");
+var name = Console.ReadLine();
+Console.WriteLine("Сколько Вам лет?");
+var age = Console.ReadLine();
+Console.WriteLine("Где Вы живете?");
+var adress = Console.ReadLine();
+Console.WriteLine("Чему Вы хотите научиться?");
+var goal = Console.ReadLine();
+Console.WriteLine("Вас зовут {0}, Вам исполнилось {1}, Вы живете {2}, и Вы хотите научиться {3}", name, age, adress, goal);
+
