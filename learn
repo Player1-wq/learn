@@ -1,19 +1,10 @@
 string namePlanet = "Earth";
-
 int numberPlanet = 3;
-
 bool canLife = true;
-
 float speedMove = 107000;
-
-byte countSatellite = 1;
-
+byte countSatellites = 1;
 char shortName = 'E';
-
 object nearbyStar = "Sun";
-
-ushort countPlanet = 8;
-
+ushort countPlanets = 8;
 short diameterPlanet = 12742;
-
 double distanceEarthToSun = 8;
