@@ -1,8 +1,9 @@
-int x = 10;
-int y = 20;
-Console.WriteLine("До изменения: x = {0}, y = {1}", x, y);
+string yourName = "Pavel";
+string friedName = "Ivan";
+Console.WriteLine("До изменения: Вас зовут = {0}, Вашего друга = {1}", yourName, friedName);
 
-int a = x;
-x = y;
-y = a;
-Console.WriteLine("После изменения: x = {0}, y = {1}", x, y);
+var name = yourName;
+
+yourName = friedName;
+friedName = name;
+Console.WriteLine("После изменения: Вас зовут = {0}, Вашего друга = {1}", yourName, friedName);
