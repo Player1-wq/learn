@@ -1,9 +1,7 @@
-string yourName = "Pavel";
-string friedName = "Ivan";
-Console.WriteLine("До изменения: Вас зовут = {0}, Вашего друга = {1}", yourName, friedName);
-
-var name = yourName;
-
-yourName = friedName;
-friedName = name;
-Console.WriteLine("После изменения: Вас зовут = {0}, Вашего друга = {1}", yourName, friedName);
+int timeReceptionHumanInMinutes = 10;
+Console.WriteLine("Как много людей в очереди перед Вами?");
+int people = int.Parse(Console.ReadLine());
+int minutesInHour = 60;
+int waitHours = people * timeReceptionHumanInMinutes / minutesInHour;
+int waitMinutes = people * timeReceptionHumanInMinutes % minutesInHour;
+Console.WriteLine("Вам надо будет  подождать {0} часов {1} минут", waitHours, waitMinutes);
