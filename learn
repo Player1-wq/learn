@@ -1,7 +1,7 @@
 int countPaintings = 52;
 int painingsInRow = 3;
 
-int rows = countPaintings / painingsInRow;
+int fullRows = countPaintings / painingsInRow;
 int excessPaintings = countPaintings % painingsInRow;
 
-Console.WriteLine("Заполнится {0} рядов, лишними остануться {1} картин.", rows, excessPaintings);
+Console.WriteLine("Заполнится {0} рядов, лишними остануться {1} картин.", fullRows, excessPaintings);
