@@ -1,7 +1,11 @@
-int countPaintings = 52;
-int painingsInRow = 3;
+Console.WriteLine("Сколько золота у Вас есть?");
+int gold = int.Parse(Console.ReadLine());
 
-int fullRows = countPaintings / painingsInRow;
-int excessPaintings = countPaintings % painingsInRow;
+int priceCristal = 10;
+Console.WriteLine("Один кристал стоит {0} золота. Сколько кристалов Вы хотите купить?", priceCristal);
+int byeCristal = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Заполнится {0} рядов, лишними остануться {1} картин.", fullRows, excessPaintings);
+int countCrystal = byeCristal;
+int remainderGold = gold - byeCristal*priceCristal;
+
+Console.WriteLine("Вы получите {0} кристалов, у Вас останется {1} золота.", countCrystal, remainderGold);
